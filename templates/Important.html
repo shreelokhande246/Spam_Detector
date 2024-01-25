@@ -1,0 +1,181 @@
+
+
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/logo-w.png"/>
+    <title>Spam</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style type="text/css" media="screen">
+  img
+  {
+      opacity: 1;
+      width: 150px;
+      height: 175px;
+  }
+  
+  img:hover
+  {
+      opacity: 0.5;
+  }	
+  li{
+      color: white;
+  }
+  td{
+    border-bottom: 2px solid white;
+    color: #cccccc;
+    column-span: 20px;
+    padding: 15px;
+    text-align: left;
+    border-spacing: 5px 1rem;
+  
+  }
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+  background-color {
+      background: #004A7FFF;
+    
+
+  }
+
+  div{
+    background-color: #004A7FFF;
+    height: 10%;
+    width: 100%;
+
+    
+  }
+
+  div1{
+      content:#ffffff;
+
+  }
+
+bg{
+    color:#ffffff;
+}
+  text{
+      size: 100px;
+  }
+  
+  
+  </style>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+     <!-- Header -->
+     <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">Important </a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="./index.html">Home</a></li>
+                      
+                        <li class="page-scroll"><a href="./About.html">About</a></li>
+                        <li class="page-scroll"><a href="./Spam.html">Spam</a></li>
+                        <li class="page-scroll"><a href="./Important.html">Important</a></li>
+                    
+                       
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+
+
+
+
+    <div class="jumbotron text-center " style="background-color: #000111;border-bottom: 3px solid #ffffff;s">
+        <h2 style=" color: white; text-size="00px"
+      text-shadow : 2px 2px 4px #ffffff; letter-spacing: 2px;">Important Message</h2>
+     </div> 
+    
+    
+     <!-- <div class="container"> -->
+      <!-- <div class="row" id="accordian" > -->
+          <div>
+                <h2 style="color: white; 
+                 text-shadow: 2px 2px 4px #000000;">Check for your entry!!!</h2><br>
+                  
+                      <!-- <div1   style="text-align: center; color: #ffffff; background-color: #004A7FFF;"  >  -->
+                    <h2 style="olor: white; "><br>{% for message in doc%}
+                            {{message}} <br>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        {% endfor %}
+                    </h2>>
+                    <!-- </div1> -->
+                
+            </div>
+    
+      <form>
+
+     
+
+
+
+
+
+        
+    
+        
+
+       
+
+      
+      </form>
+    </div>
+
+
+</body>
+</html>
